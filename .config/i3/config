@@ -28,6 +28,10 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/21x9/mandaloria
 exec_always --no-startup-id pkill -f blueman-applet
 exec_always --no-startup-id blueman-applet &
 
+# Stop any running instances of pasystray, and start it again
+exec_always --no-startup-id pkill -f pasystray
+exec_always --no-startup-id pasystray &
+
 # focus following mouse yes|no
 focus_follows_mouse yes
 
