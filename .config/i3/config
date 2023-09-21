@@ -87,6 +87,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec terminator
 bindsym $mod+Shift+Return exec i3-sensible-terminal
 
+# launch gnome-text-editor in a floating window
+bindsym $mod+t exec gnome-text-editor
+for_window [class="gnome-text-editor"] floating enable
+
 # kill focused window
 bindsym $mod+q kill
 
